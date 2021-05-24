@@ -31,6 +31,9 @@ return [
     // Brazil
     'BR' => \Umulmrum\Holiday\Provider\Brazil\Brazil::class,
 
+    // Cuba
+    'CU' => \Umulmrum\Holiday\Provider\Cuba\Cuba::class,
+
     // Denmark
     'DK' => \Umulmrum\Holiday\Provider\Denmark\Denmark::class,
 

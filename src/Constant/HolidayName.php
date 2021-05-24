@@ -83,6 +83,10 @@ final class HolidayName
     public const REPUBLIC_PROCLAMATION_DAY = 'republic_proclamation_day';
     public const TIRADENTES = 'tiradentes';
 
+    //Cuba
+    public const NATIONAL_REBELLION_DAY= 'national_rebellion_day';
+    public const NATIONAL_REBELLION_DAY_CELEBRATION= 'national_rebellion_day_celebration';
+
     // Denmark
     public const DANISH_NATIONAL_HOLIDAY = 'danish_national_holiday';
     public const GENERAL_PRAYER_DAY = 'general_prayer_day';

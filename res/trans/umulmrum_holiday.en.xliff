@@ -314,6 +314,14 @@
         <source>naefelser_fahrt</source>
         <target>Näfelser Fahrt</target>
       </trans-unit>
+      <trans-unit id="national_rebellion_day">
+        <source>national_rebellion_day</source>
+        <target>National Rebellion Day</target>
+      </trans-unit>
+      <trans-unit id="national_rebellion_day_celebration">
+        <source>national_rebellion_day_celebration</source>
+        <target>National Rebellion Day Celebration</target>
+      </trans-unit>
       <trans-unit id="nativity_of_mary">
         <source>nativity_of_mary</source>
         <target>Nativity of Mary</target>
