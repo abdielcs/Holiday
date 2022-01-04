@@ -38,6 +38,7 @@ class Cuba implements HolidayProviderInterface
         $this->addIndependenceDay($holidays, $year);
         $this->addChristmasDay($holidays, $year);
         $this->addNewYearsEve($holidays, $year);
+        $this->addDaysByMinisterResolution($holidays,$year);
         return $holidays;
     }
 
@@ -124,6 +125,14 @@ class Cuba implements HolidayProviderInterface
     {
         $holiday = $this->getNewYearsEve($year, HolidayType::OFFICIAL | HolidayType::DAY_OFF);
         $holidays->add($holiday);
+    }
+
+    private function addDaysByMinisterResolution(HolidayList $holidays, int $year): void
+    {
+        //http://www.cubadebate.cu/noticias/2021/12/23/proximo-3-de-enero-sera-dia-feriado-en-cuba/
+        if($year === 2022){
+            $holidays->add(Holiday::create(HolidayName::MINISTERIAL_RESOLUTION, "2022-01-03", HolidayType::OFFICIAL | HolidayType::DAY_OFF));
+        }
     }
 
 }

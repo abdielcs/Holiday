@@ -306,6 +306,10 @@
         <source>memorial_day</source>
         <target>Memorial Day</target>
       </trans-unit>
+      <trans-unit id="ministerial_resolution">
+        <source>ministerial_resolution</source>
+        <target>Ministerial Resolution</target>
+      </trans-unit>
       <trans-unit id="monday">
         <source>monday</source>
         <target>Monday</target>

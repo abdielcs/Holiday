@@ -86,6 +86,7 @@ final class HolidayName
     //Cuba
     public const NATIONAL_REBELLION_DAY= 'national_rebellion_day';
     public const NATIONAL_REBELLION_DAY_CELEBRATION= 'national_rebellion_day_celebration';
+    public const MINISTERIAL_RESOLUTION= 'ministerial_resolution';
 
     // Denmark
     public const DANISH_NATIONAL_HOLIDAY = 'danish_national_holiday';
