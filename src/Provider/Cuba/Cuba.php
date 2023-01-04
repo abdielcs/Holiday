@@ -16,6 +16,8 @@ use Umulmrum\Holiday\Provider\Religion\ChristianHolidaysTrait;
 /**
  * The Nearest Compensatory Day rule is not always apply on Cuba. Mostly depends of labour Saturdays and even on Sundays
  * is not always apply.
+ *
+ * Reference for holidays days in Cuba https://www.gacetaoficial.gob.cu/es/ley-no-116-codigo-de-trabajo art.94 y art.100
  */
 class Cuba implements HolidayProviderInterface
 {
@@ -129,9 +131,12 @@ class Cuba implements HolidayProviderInterface
 
     private function addDaysByMinisterResolution(HolidayList $holidays, int $year): void
     {
-        //http://www.cubadebate.cu/noticias/2021/12/23/proximo-3-de-enero-sera-dia-feriado-en-cuba/
         if($year === 2022){
+            //http://www.cubadebate.cu/noticias/2021/12/23/proximo-3-de-enero-sera-dia-feriado-en-cuba/
             $holidays->add(Holiday::create(HolidayName::MINISTERIAL_RESOLUTION, "2022-01-03", HolidayType::OFFICIAL | HolidayType::DAY_OFF));
+        }elseif ($year === 2023){
+            https://www.granma.cu/cuba/2022-12-14/disponen-receso-de-las-actividades-laborales-el-proximo-3-de-enero
+            $holidays->add(Holiday::create(HolidayName::MINISTERIAL_RESOLUTION, "2023-01-03", HolidayType::OFFICIAL | HolidayType::DAY_OFF));
         }
     }
 
